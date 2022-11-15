@@ -17,7 +17,7 @@ def logistic(Img, x, u,times):
     v = xor
     return v
 
-def picture(Img_from,Img_to):
+def transfer(Img_from,Img_to):
     print("图片原始地址"+Img_from)
     print("图片保存地址"+Img_to)
     Img = cv2.imread(Img_from)
@@ -43,12 +43,12 @@ times = 500
 
 # encryption
 print("对图片加密")
-picture('./picture/origin.png','./picture/encryption.png')
+transfer('./picture/origin.png','./picture/encryption.png')
 
 
 # decryption
 print("对加密后的图片解密")
-picture('./picture/encryption.png','./picture/decryption.png')
+transfer('./picture/encryption.png','./picture/decryption.png')
 
 
-# https://www.cnblogs.com/hortz/p/16000934.html
+# 摘自https://www.cnblogs.com/hortz/p/16000934.html，有修改
