@@ -16,7 +16,7 @@ def main():
     turtle.pensize(4)
     turtle.goto(-200, -50)
     turtle.pendown()
-    num=5
+    num=2
     turtle.Turtle().screen.delay(0)
     hua(300, num)
     turtle.right(120)
